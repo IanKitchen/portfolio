@@ -1,0 +1,117 @@
+
+
+@hairline:#707070;
+@background:#f3f3f3;
+@headerText:#444;
+
+@button-normal: #5B83AD;
+@button-hover: (@button-normal - #555);
+@button-click: (@button-normal + #333);
+
+.rounded-corners (@radius: 5px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -ms-border-radius: @radius;
+  -o-border-radius: @radius;
+  border-radius: @radius;
+}
+
+//
+
+div.banner
+{
+	margin-left:auto;
+	margin-right:auto;	
+	padding-top: 10px;
+	
+	width:800px;
+	height:70px;
+	
+	float:none;
+	position:relative; 
+}
+
+div.name
+{
+	width:90px;
+	display:inline;
+	float:left;	
+	padding:10px;
+	background-color: @button-normal;
+	text-align: center;
+	color:white;
+	font-family:sans-serif;
+}
+
+div.name:hover
+{
+	cursor:pointer;
+}
+
+ul.topNav
+{
+	padding:0px;
+	margin:0px;
+	width:600px;
+}
+
+
+li.topNav
+{
+	display:inline;
+	float:right;
+	padding:10px;
+	font-family:sans-serif;
+	list-style: none;
+	color:@headerText;
+}
+
+div.selectedPage
+{
+	background-color:#cecece;
+	width:auto;
+	height:3px;
+}
+
+li.topNav:hover
+{
+	background-color: @background;
+	cursor:pointer;
+}
+
+.messageTitle
+{
+	margin-left:40px; 
+	margin-top:50px; 
+	font-family: 'Lato', sans-serif;
+	font-size:18px;
+}
+
+.message
+{
+	margin-left:50px; 
+	margin-right:50px;
+	margin-top:30px; 
+	font-family: 'Lato', sans-serif;
+	font-size:14px;
+}
+
+.messageInner
+{
+	margin-left:70px; 
+	margin-right:70px;
+	margin-top:30px; 
+	font-family: 'Lato', sans-serif;
+	font-size:14px;
+}
+
+.thumb
+{
+	width:200px; 
+	margin-left:50px;
+}
+
+.thumb:hover
+{
+	cursor:pointer;
+}
