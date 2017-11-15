@@ -1,12 +1,16 @@
 
+//select the content div and appends an svg block to hold the link chart
+
 $(document).ready(function(){
 
-
-			// http://blog.thomsonreuters.com/index.php/mobile-patent-suits-graphic-of-the-day/
 			var links = [
-			  {source: "UX", target: "Design", type: "licensing"},
-			  {source: "UX", target: "Visualization", type: "licensing"},
-			  {source: "UX", target: "Interaction", type: "suit"},
+			  {source: "Me", target: "Design", type: "licensing"},
+			  {source: "Design", target: "Design Thinking", type: "licensing"},
+			  {source: "Design Thinking", target: "Observe", type: "licensing"},
+			  {source: "Design Thinking", target: "Reflect", type: "licensing"},
+			  {source: "Design Thinking", target: "Make", type: "licensing"},
+			  {source: "Me", target: "Visualization", type: "licensing"},
+			  {source: "Me", target: "Interaction", type: "suit"},
 			  {source: "Visualization", target: "Time", type: "suit"},
 			];
 			
@@ -18,7 +22,7 @@ $(document).ready(function(){
 			  link.target = nodes[link.target] || (nodes[link.target] = {name: link.target});
 			});
 			
-			var width = 400,
+			var width = 750,
 			    height = 400;
 			
 			var force = d3.layout.force()
@@ -37,7 +41,7 @@ $(document).ready(function(){
 			// Per-type markers, as they don't inherit styles.
 			svg.append("defs").selectAll("marker")
 			    .data(["suit", "licensing", "resolved"])
-			  .enter().append("marker")
+			    .enter().append("marker")
 			    .attr("id", function(d) { return d; })
 			    .attr("viewBox", "0 -5 10 10")
 			    .attr("refX", 15)
@@ -45,24 +49,24 @@ $(document).ready(function(){
 			    .attr("markerWidth", 6)
 			    .attr("markerHeight", 6)
 			    .attr("orient", "auto")
-			  .append("path")
+			    .append("path")
 			    .attr("d", "M0,-5L10,0L0,5");
 			
 			var path = svg.append("g").selectAll("path")
 			    .data(force.links())
-			  .enter().append("path")
+			    .enter().append("path")
 			    .attr("class", function(d) { return "link " + d.type; })
 			    .attr("marker-end", function(d) { return "url(#" + d.type + ")"; });
 			
 			var circle = svg.append("g").selectAll("circle")
 			    .data(force.nodes())
-			  .enter().append("circle")
-			    .attr("r", 6)
+			    .enter().append("circle")
+			    .attr("r", 8)
 			    .call(force.drag);
 			
 			var text = svg.append("g").selectAll("text")
 			    .data(force.nodes())
-			  .enter().append("text")
+			    .enter().append("text")
 			    .attr("x", 8)
 			    .attr("y", ".31em")
 			    .text(function(d) { return d.name; });

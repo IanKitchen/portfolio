@@ -1,27 +1,29 @@
+
+/* used for links in d3 */
 .link {
   fill: none;
   stroke: #666;
   stroke-width: 1.5px;
 }
 
-#licensing {
-  fill: green;
-}
-
+/* used for green links in d3*/
 .link.licensing {
   stroke: green;
 }
 
+/* not used in d3 */
 .link.resolved {
   stroke-dasharray: 0,2 1;
 }
 
+/* used for nodes in d3 */
 circle {
   fill: #ccc;
   stroke: #333;
-  stroke-width: 1.5px;
+  stroke-width: 1px;
 }
 
+/* used for text in d3*/
 text {
   font: 10px sans-serif;
   pointer-events: none;

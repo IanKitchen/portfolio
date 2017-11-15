@@ -17,7 +17,7 @@
 	<body>
 		<div class="banner">
 			<div id="Index" class="name">   Ian Kitchen   </div>	 	
-			<ul class="topNav" style="display:inline">
+			<ul class="topNav">
 				<li id="Contact" class="topNav">Contact</li>
 				<li id="CV" class="topNav">CV</li>
 				<li id="Portfolio" class="topNav">Portfolio <div class="selectedPage"></div></li>
@@ -26,11 +26,13 @@
 		
 		<div class="banner tucked-corners" style="height:1200px"> 
 			<br><br>
-			<div style="float:left"><img id="activityViewThumb" class="thumb" src="images\Activity View.png" >	</div>
-			<div style="float:left"><img id="frameworkThumb"  class="thumb" src="images\Overview Screen.png"  > </div>	
-			<div style="float:left"><img id="hiddenInsightsThumb"  class="thumb" src="images\Hidden Insights.png"  > </div>	
-				
+			<div id="thumbnails">
+				<div style="float:left"><img id="activityViewThumb" class="thumb" src="images\Activity View.png" >	</div>
+				<div style="float:left"><img id="frameworkThumb"  class="thumb" src="images\Overview Screen.png"  > </div>	
+				<div style="float:left"><img id="hiddenInsightsThumb"  class="thumb" src="images\Hidden Insights.png"  > </div>	
+			</div>
 			<div id="activityView" style="clear:left">
+				<--
 				<p class="messageTitle" style="margin-top:50px"> 
 					Activity View 
 				</p> 
@@ -51,6 +53,12 @@
 				<img src="images\Activity View.png" style="width:700px; margin-left:50px;" >
 			</div>
 			<div id="framework" style="clear:left">
+				<!--
+				<div class="backButton" style="margin-top:10px"> 
+					Back to Gallery 
+				</div>
+				-->
+
 				<p class="messageTitle" style="margin-top:50px"> 
 					Application Framework 
 				</p> 
@@ -69,6 +77,7 @@
 					The Solution: 
 				</p>
 				<img src="images\Overview Screen.png" style="width:700px; margin-left:50px;" >
+
 			</div>
 		</div>
 		

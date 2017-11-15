@@ -2,20 +2,6 @@
 
 $(document).ready(function(){
 
-	$("#activityView").hide();
-
-	$("#Contact").click(function(){
-		window.location.href = "contact.html";
-	});
-
-	$("#CV").click(function(){
-		window.location.href = "cv.html";
-	});
-	
-	$("#Portfolio").click(function(){
-		window.location.href = "portfolio.html";
-	});
-
 	$("#Index").click(function(){
 		window.location.href = "index.html";
 	});
@@ -23,8 +9,16 @@ $(document).ready(function(){
 	$("#Hello").click(function(){
 		window.location.href = "index.html";
 	});
+
+	$("#Portfolio").click(function(){
+		window.location.href = "portfolio.html";
+	});
+
+	$("#activityView").hide();
 	
 	$("#frameworkThumb").click(function(){
+		$("#thumbnails").fadeOut("slow");
+		$("#thumbnails").hide();
 		$("#activityView").fadeOut("slow");
 		$("#activityView").hide();
 		$("#framework").fadeIn("slow");
@@ -34,6 +28,14 @@ $(document).ready(function(){
 		$("#framework").fadeOut("slow");
 		$("#framework").hide();
 		$("#activityView").fadeIn("slow");
+	});
+
+	$("#CV").click(function(){
+		window.location.href = "cv.html";
+	});
+	
+	$("#Contact").click(function(){
+		window.location.href = "contact.html";
 	});
 });
 

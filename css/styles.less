@@ -1,13 +1,14 @@
 
-
+//used in the following styles
 @hairline:#707070;
 @background:#f3f3f3;
 @headerText:#444;
 
-@button-normal: #5B83AD;
+@button-normal: #5B8300;
 @button-hover: (@button-normal - #555);
 @button-click: (@button-normal + #333);
 
+//not currently used?
 .rounded-corners (@radius: 5px) {
   -webkit-border-radius: @radius;
   -moz-border-radius: @radius;
@@ -16,8 +17,7 @@
   border-radius: @radius;
 }
 
-//
-
+//used for top navigation area
 div.banner
 {
 	margin-left:auto;
@@ -31,6 +31,7 @@ div.banner
 	position:relative; 
 }
 
+//used for Ian Kitchen button on all pages
 div.name
 {
 	width:90px;
@@ -43,19 +44,23 @@ div.name
 	font-family:sans-serif;
 }
 
+//used for hover effect on name buttons
 div.name:hover
 {
 	cursor:pointer;
+	background-color: @button-hover;
 }
 
+//used for primary navigation buttons on top right
 ul.topNav
 {
 	padding:0px;
 	margin:0px;
 	width:600px;
+	display:inline;
 }
 
-
+//used for each button in the top right list
 li.topNav
 {
 	display:inline;
@@ -64,8 +69,10 @@ li.topNav
 	font-family:sans-serif;
 	list-style: none;
 	color:@headerText;
+
 }
 
+//used to underline the selected page
 div.selectedPage
 {
 	background-color:#cecece;
@@ -73,12 +80,14 @@ div.selectedPage
 	height:3px;
 }
 
+//could be used to change style on hover, currently just for pointer
 li.topNav:hover
 {
 	background-color: @background;
 	cursor:pointer;
 }
 
+//used on each page to introduce a section
 .messageTitle
 {
 	margin-left:40px; 
@@ -87,6 +96,7 @@ li.topNav:hover
 	font-size:18px;
 }
 
+//content, for example block of text in teh portfolio
 .message
 {
 	margin-left:50px; 
@@ -96,6 +106,7 @@ li.topNav:hover
 	font-size:14px;
 }
 
+//content, mainly used on cv for inset blocks of text
 .messageInner
 {
 	margin-left:70px; 
@@ -105,12 +116,27 @@ li.topNav:hover
 	font-size:14px;
 }
 
+//used for Ian Kitchen button on all pages
+div.backButton
+{
+	width:90px;
+	display:inline;
+	float:left;	
+	padding:10px;
+	background-color: @button-hover;
+	text-align: center;
+	color:white;
+	font-family:sans-serif;
+}
+
+//used on portfolio for thumbnails
 .thumb
 {
 	width:200px; 
 	margin-left:50px;
 }
 
+//hover effect for thumbnails
 .thumb:hover
 {
 	cursor:pointer;
