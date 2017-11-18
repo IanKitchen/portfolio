@@ -116,28 +116,44 @@ li.topNav:hover
 	font-size:14px;
 }
 
-//used for Ian Kitchen button on all pages
+//used for navigation to thumbnails on portfolio page
 div.backButton
 {
-	width:90px;
+	width:180px;
 	display:inline;
-	float:left;	
+	float:right;	
 	padding:10px;
-	background-color: @button-hover;
+	background-color: @background;
 	text-align: center;
-	color:white;
+	color:@headerText;
 	font-family:sans-serif;
 }
 
+div.backButton:hover
+{
+	cursor:pointer
+}
+
 //used on portfolio for thumbnails
-.thumb
+img.thumb
 {
 	width:200px; 
+	//background-color: @background;
 	margin-left:50px;
 }
 
+
 //hover effect for thumbnails
-.thumb:hover
+img.thumb:hover
 {
 	cursor:pointer;
+}
+
+//label under each thumb
+div.thumbLabel
+{
+	width:200px;
+	margin-left:50px;
+	text-align: center;
+	font-family:sans-serif;
 }
