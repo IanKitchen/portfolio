@@ -32,6 +32,7 @@ $(document).ready(function(){
 	$("#backButton").click(function(){
 		$("#framework").fadeOut("slow");
 		$("#activityView").fadeOut("slow");
+		$("#principles").fadeOut("slow");
 		$("#thumbnails").fadeIn("slow");
 	});
 	
