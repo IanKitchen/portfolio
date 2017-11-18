@@ -30,9 +30,10 @@ $(document).ready(function(){
 	
 	//back button
 	$("#backButton").click(function(){
-		$("#framework").fadeOut("slow");
-		$("#activityView").fadeOut("slow");
-		$("#principles").fadeOut("slow");
+		$("#framework").hide();
+		$("#activityView").hide();
+		$("#principles").hide();
+		$("#backButton").hide();
 		$("#thumbnails").fadeIn("slow");
 	});
 	
