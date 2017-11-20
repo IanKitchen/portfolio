@@ -10,6 +10,10 @@
 		<script type="text/javascript" src="js/jquery.js"></script>	
 		<script type="text/javascript" src="js/less.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
+		<meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+		<style> body {padding: 0; margin: 0;} </style>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.js"></script>
+		<script src="js\sketch.js"></script>
 		<title>
 			Portfolio
 		</title>
@@ -26,7 +30,7 @@
 		
 		<div class="banner tucked-corners" style="height:1200px"> 
 			<br><br>
-			<div id="thumbnails">
+			<div id="thumbnails1">
 				<div style="float:left">
 					<img id="activityViewThumb" class="thumb" src="images\Activity View.png" >
 					<div class="thumbLabel" style="margin-top:90px"> 
@@ -46,6 +50,10 @@
 					</div> 
 				</div>	
 			</div>
+			
+			<!-- attach p5 here -->
+			<div style="height:20px; width:800px; clear:left"> </div>
+			<div id="thumbnailsp5"></div>
 			
 			<!--Back button -->
 			<div id="backButton" class="backButton" style="margin-top:10px"> 
@@ -117,6 +125,27 @@
 				<img src="images\Overview Screen.png" style="width:700px; margin-left:50px;" >
 			</div>
 			
+			<br><br>
+			<div id="thumbnails2">
+				<div style="float:left">
+					<img id="case4" class="thumb" src="images\Portfolio Placeholder.png" style="margin-top:60px">
+					<div class="thumbLabel" style="margin-top:10px"> 
+						Study 4
+					</div> 
+				</div>
+				<div style="float:left">
+					<img id="case5"  class="thumb" src="images\Portfolio Placeholder.png" style="margin-top:60px" > 
+					<div class="thumbLabel" style="margin-top:10px"> 
+						Study 5
+					</div> 
+				</div>	
+				<div style="float:left">
+					<img id="case6"  class="thumb" src="images\Portfolio Placeholder.png" style="margin-top:60px" > 
+					<div class="thumbLabel" style="margin-top:10px"> 
+						Study 6
+					</div> 
+				</div>	
+			</div>
 		</div>
 		
 	</body>
