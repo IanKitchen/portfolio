@@ -25,7 +25,7 @@ function setup() {
 
 function draw() {
 	
-	
+
 	
   var blueNote = color('#5BA2F4');
   var greenNote = color('#5AF2C2');
