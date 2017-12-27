@@ -2,25 +2,25 @@ function setup() {
 	var myCanvas = createCanvas(700, 400);
 	myCanvas.parent('stickies');
 	
-	  fill('black');
-  textSize(24);
-  textFont("Helvetica");
-  //text("have fun with stickies...", 0, 32);	
+	fill('black');
+	textSize(24);
+    textFont("Helvetica");
+    //text("have fun with stickies...", 0, 32);	
   
-  fill('rgba(10%,10%,10%,0.1)')
-  noStroke();
-  rect(85, 85, 80, 80);
+    fill('rgba(10%,10%,10%,0.1)')
+    noStroke();
+    rect(85, 85, 80, 80);
   
-  var yellowNote = color('#F7EA5C');
-  fill(yellowNote);
-  stroke('rgba(80%,80%,80%,0.9)');
-  strokeWeight(1);
-  rect(80, 80, 80, 80);
+    var yellowNote = color('#F7EA5C');
+    fill(yellowNote);
+    stroke('rgba(80%,80%,80%,0.9)');
+    strokeWeight(1);
+    rect(80, 80, 80, 80);
   
-  fill('black');
-  textSize(12);
-  textFont("Helvetica");
-  text("click for fun!", 88, 100);
+    fill('black');
+    textSize(12);
+    textFont("Helvetica");
+    text("click for fun!", 88, 100);
 }
 
 function draw() {

@@ -42,6 +42,7 @@ $(document).ready(function(){
 		$("#thumbnails").hide();
 		$("#backButton").fadeIn("slow");
 		$("#activityView").fadeIn("slow");
+		indicatorHeight = 0;
 	});
 	
 	//framework
